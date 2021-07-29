@@ -1,0 +1,20 @@
+{
+  "name": "node_ia",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusmed/node_IA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusmed/node_IA/issues"
+  },
+  "homepage": "https://github.com/mateusmed/node_IA#readme"
+}
