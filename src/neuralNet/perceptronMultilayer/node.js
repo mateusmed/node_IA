@@ -18,22 +18,26 @@ const generateWList = (sizeNodeSonList) => {
 
 class Node{
 
-    constructor(id, input, nodeSonList) {
+    constructor(id, layer, input, nodeSonList) {
 
         this.id = id;
+        this.layer = layer;
+        this.activationFuncation = undefined;
+        this.calcActivationFunction = 0;
         this.input = input;
-        this.nodeSonList = nodeSonList;
+        this.output = 0;
+        this.partialInput = [];
 
         if(nodeSonList){
             this.w_list = generateWList(nodeSonList.length);
         }
 
+        this.nodeSonList = nodeSonList;
     }
 
+
     toString(){
-        return JSON.stringify(this,
-                              undefined,
-                              2);
+        return JSON.stringify(this, undefined, 2);
     }
 
 }
