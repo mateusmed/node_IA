@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec52fcb-3d21-466a-8826-81c99b3c7df0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/neuralNet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/diagram1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/diagramas/diagram1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/diagram2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/diagramas/diagram2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/funcaoAtivacao.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/funcoes/funcaoAtivacao.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/neuralNet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/neuralNet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/neuralNet/perceptronMultilayer/main.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../workspace/financeiro/pgt-registra-comissao" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,9 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\workspaceMateus\node_IA" />
-      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet" />
-      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet\perceptronOneLayer" />
+      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet\perceptronMultilayer\funcoes\pesos" />
+      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet\perceptronMultilayer\funcoes\pesos\gradiente" />
+      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet\perceptronMultilayer\funcoesPesos" />
+      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet\perceptronMultilayer\diagramas" />
+      <recent name="C:\dev\workspaceMateus\node_IA\src\neuralNet\perceptronMultilayer\funcoes" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.run mult">
@@ -93,7 +93,8 @@
       <workItem from="1617119716107" duration="3538000" />
       <workItem from="1617128509091" duration="8957000" />
       <workItem from="1627567802443" duration="36425000" />
-      <workItem from="1627673675898" duration="6462000" />
+      <workItem from="1627673675898" duration="7183000" />
+      <workItem from="1627913421080" duration="9155000" />
     </task>
     <servers />
   </component>

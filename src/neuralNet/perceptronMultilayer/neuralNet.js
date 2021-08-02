@@ -1,11 +1,38 @@
 import Node from "./node.js";
 
 
-const activationFunction = (x) => {
+const sigmoid = (x) => {
 
     // 1 / 1 + e^ -x
 
     return 1 / (1 + Math.exp(-x));
+}
+
+
+//derivada parcial
+const partialDerivative = (y) => {
+
+    return y * (1 - y);
+}
+
+
+const deltaFinalLayer = (node) => {
+
+    let value = partialDerivative(node.calcActivationFunction);
+
+    return node.error * value;
+
+}
+
+const deltaHiddenLayer = () => {
+
+    //todo
+    // derivadaSigmoide === derivada do input
+
+    //todo
+    // derivadaSigmoide * peso * deltaSaída
+
+
 }
 
 
@@ -58,9 +85,25 @@ class NeuralNet{
     }
 
 
+    calcAbsErros(responseList){
+
+        let sumError = 0;
+
+        for(let response of responseList){
+
+            let abs = Math.abs(response.error);
+            sumError = sumError + abs;
+        }
+
+        return sumError;
+    }
+
+
     training(){
 
-        for(let data of dataTraining){
+        let responseList = [];
+
+        for(let data of this.dataTrainingList){
 
             let node1 = this.inputLayer[0];
             let node2 = this.inputLayer[1];
@@ -68,11 +111,21 @@ class NeuralNet{
             node1.input = data.input;
             node2.input = data.input;
 
-            this.calcNet();
+            let response = this.calcNet();
+
+            responseList.push(response);
         }
 
-        // todo calcula o erro, se o erro é aceitável
-        // todo para - return
+        let absResponseError = this.calcAbsErros(responseList);
+
+        if(absResponseError >= 0.6){
+
+            console.log('treinamento efetuado com sucesso');
+            return;
+        }
+
+        // todo ajuste de pesos backpropagation
+
 
         this.training();
     }
@@ -91,20 +144,27 @@ class NeuralNet{
 
                 if(node.layer === 'hidden' ){
 
+                    //todo fazer os calculos dos deltas já direto aqui
+
                     node.activationFuncation = 'sigmoid';
-                    node.calcActivationFunction = activationFunction(node.input);
+                    node.calcActivationFunction = sigmoid(node.input);
                 }
 
                 if(node.layer === 'finalLayer'){
 
                     node.activationFuncation = 'sigmoid';
-                    node.calcActivationFunction = activationFunction(node.input);
+                    node.calcActivationFunction = sigmoid(node.input);
 
                     node.output = node.calcActivationFunction;
 
-                    let error = this.calcError(this.correctResponse, node.output);
+                    let error = this.calcError(node.correctResponse, node.output);
 
-                    let response = { 'error' : error, 'output': node.output };
+                    deltaFinalLayer()
+
+                    let response = { 'error' : error,
+                                     'output': node.output,
+                                     'input': node.input,
+                                     'node.calcActivationFunction': node.calcActivationFunction };
 
                     return response;
                 }
